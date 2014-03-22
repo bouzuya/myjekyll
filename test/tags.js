@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 
-describe('index', function() {
+describe('tags', function() {
   describe('single entry', function() {
     it('works', function() {
       var tags = require('../lib/tags');

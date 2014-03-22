@@ -2,7 +2,7 @@
 layout: post
 pubdate: "2014-01-02T20:41:36+09:00"
 title: title2
-tags: [tag1, tag4]
+tags: [tag1, tag3]
 minutes: 4
 pagetype: posts
 ---

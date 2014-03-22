@@ -18,9 +18,39 @@ describe('index', function() {
   });
 
   describe('entries', function() {
-    it('works', function() {
-      var entries = this.jekyll.entries;
-      expect(entries).to.be.an('array');
+    describe('no option', function() {
+      it('works', function() {
+        var entries = this.jekyll.entries();
+        expect(entries).to.be.an('array');
+        expect(entries).to.have.length(2);
+      });
+    });
+
+    describe('tags option', function() {
+      describe('tag1', function() {
+        it('works', function() {
+          var entries = this.jekyll.entries({ tags: ['tag1'] });
+          expect(entries).to.be.an('array');
+          expect(entries).to.have.length(2);
+        });
+      });
+
+      describe('tag2', function() {
+        it('works', function() {
+          var entries = this.jekyll.entries({ tags: ['tag3'] });
+          expect(entries).to.be.an('array');
+          expect(entries).to.have.length(1);
+        });
+      });
+
+      describe('tag1 & tag2', function() {
+        it('works', function() {
+          var entries = this.jekyll.entries({ tags: ['tag1', 'tag2'] });
+          expect(entries).to.be.an('array');
+          expect(entries).to.have.length(1);
+        });
+      });
+
     });
   });
 
