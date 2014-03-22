@@ -6,6 +6,7 @@ describe('index', function() {
 
   beforeEach(function() {
     this.postsDir = path.resolve(__dirname, './fixtures/');
+    this.post = path.resolve(this.postsDir, './2014-01-01-diary.markdown');
     this.jekyll = jekyll({ dir: this.postsDir });
   });
 
@@ -34,7 +35,7 @@ describe('index', function() {
 
   describe('_loadEntry', function() {
     it('works', function() {
-      var entry = this.jekyll._loadEntry('/home/bouzuya/bouzuya.github.com/_posts/2014-03-21-diary.markdown');
+      var entry = this.jekyll._loadEntry(this.post);
       expect(entry).to.have.property('meta');
       expect(entry).to.have.property('content');
     });
