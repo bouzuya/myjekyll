@@ -12,8 +12,17 @@ describe('index', function() {
 
   describe('tags', function() {
     it('works', function() {
-      var tags = this.jekyll.tags;
+      var tags = this.jekyll.tags();
       expect(tags).to.be.an('array');
+    });
+  });
+
+  describe('tagCounts', function() {
+    it('works', function() {
+      var tags = this.jekyll.tagCounts();
+      expect(tags).to.have.property('tag1', 2);
+      expect(tags).to.have.property('tag2', 1);
+      expect(tags).to.have.property('tag3', 1);
     });
   });
 
@@ -58,7 +67,7 @@ describe('index', function() {
     it('works', function() {
       var entries = this.jekyll._loadEntries(this.postsDir);
       expect(entries).to.be.an('array');
-      expect(entries[0]).to.have.property('meta');
+      expect(entries[0]).to.have.property('title');
       expect(entries[0]).to.have.property('content');
     });
   });
@@ -66,7 +75,7 @@ describe('index', function() {
   describe('_loadEntry', function() {
     it('works', function() {
       var entry = this.jekyll._loadEntry(this.post);
-      expect(entry).to.have.property('meta');
+      expect(entry).to.have.property('title');
       expect(entry).to.have.property('content');
     });
   });

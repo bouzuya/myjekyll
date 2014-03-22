@@ -5,22 +5,22 @@ describe('tags', function() {
     it('works', function() {
       var tags = require('../lib/tags');
       var entries = [
-        { meta: { tags: ['a', 'b'] } },
+        { tags: ['a', 'b'] },
       ];
-      expect(tags(entries)).to.deep.equal(['a', 'b']);
+      expect(tags(entries)).to.deep.equal({ a: 1, b: 1 });
     });
   });
 
-  describe('multiple entries (& empty tags)', function() {
+  describe('multi entries (& empty tags)', function() {
     it('works', function() {
       var tags = require('../lib/tags');
       var entries = [
-        { meta: { tags: ['a', 'b'] } },
-        { meta: { tags: [] } },
-        { meta: {} },
-        { meta: { tags: ['a', 'c'] } }
+        { tags: ['a', 'b'] },
+        { tags: [] },
+        {},
+        { tags: ['a', 'c'] }
       ];
-      expect(tags(entries)).to.deep.equal(['a', 'b', 'c']);
+      expect(tags(entries)).to.deep.equal({ a: 2, b: 1, c: 1 });
     });
   });
 

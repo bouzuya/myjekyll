@@ -14,14 +14,14 @@ describe('parse', function() {
     s += '[bouzuya/bouzuya.github.com](https://github.com/bouzuya/bouzuya.github.com)';
     var parse = require('../lib/parse');
     var result = parse(s);
-    expect(result).to.have.property('meta');
-    expect(result).to.have.deep.property('meta.layout', 'post');
-    expect(result).to.have.deep.property('meta.pubdate', '2014-01-23T01:23:45+09:00');
-    expect(result).to.have.deep.property('meta.title', 'title string');
-    expect(result).to.have.deep.property('meta.tags');
-    expect(result.meta.tags).to.have.deep.equal(['javascript', 'hubot']);
-    expect(result).to.have.deep.property('meta.minutes', 32);
-    expect(result).to.have.deep.property('meta.pagetype', 'posts');
+    expect(result).to.have.property('layout', 'post');
+    expect(result).to.have.property('pubdate', '2014-01-23T01:23:45+09:00');
+    expect(result).to.have.property('title', 'title string');
+    expect(result).to.have.property('tags');
+    expect(result.tags).to.have.deep.equal(['javascript', 'hubot']);
+    expect(result).to.have.property('minutes', 32);
+    expect(result).to.have.property('pagetype', 'posts');
+    expect(result).to.have.property('content');
   });
 });
 
