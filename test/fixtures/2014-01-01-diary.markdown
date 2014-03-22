@@ -1,0 +1,9 @@
+---
+layout: post
+pubdate: "2014-01-01T23:59:59+09:00"
+title: title1
+tags: [tag1, tag2, tag3]
+minutes: 20
+pagetype: posts
+---
+[anchor-text](http://bouzuya.net/)をつくった。
