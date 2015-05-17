@@ -1,8 +1,8 @@
 {
   "name": "myjekyll",
-  "version": "1.0.0",
   "description": "myjekyll",
-  "main": "index.js",
+  "version": "1.0.0",
+  "author": "bouzuya",
   "dependencies": {
     "js-yaml": "~3.0.2"
   },
@@ -10,9 +10,9 @@
     "chai": "^1.9.1",
     "mocha": "^1.18.2"
   },
+  "license": "MIT",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
-  },
-  "author": "bouzuya",
-  "license": "MIT"
+  }
 }
