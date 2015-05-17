@@ -5,9 +5,7 @@ var jekyll = require('../');
 describe('index', function() {
 
   beforeEach(function() {
-    this.postsDir = path.resolve(__dirname, './fixtures/');
-    this.post = path.resolve(this.postsDir, './2014-01-01-diary.markdown');
-    this.jekyll = jekyll({ dir: this.postsDir });
+    this.jekyll = jekyll('./test/fixtures/*.markdown', {});
   });
 
   describe('tags', function() {
@@ -65,7 +63,7 @@ describe('index', function() {
 
   describe('_loadEntries', function() {
     it('works', function() {
-      var entries = this.jekyll._loadEntries(this.postsDir);
+      var entries = this.jekyll._loadEntries('./test/fixtures/*.markdown', {});
       expect(entries).to.be.an('array');
       expect(entries[0]).to.have.property('title');
       expect(entries[0]).to.have.property('content');
@@ -74,10 +72,10 @@ describe('index', function() {
 
   describe('_loadEntry', function() {
     it('works', function() {
-      var entry = this.jekyll._loadEntry(this.post);
+      var mdpath = './test/fixtures/2014-01-01-diary.markdown';
+      var entry = this.jekyll._loadEntry(mdpath);
       expect(entry).to.have.property('title');
       expect(entry).to.have.property('content');
     });
   });
 });
-
