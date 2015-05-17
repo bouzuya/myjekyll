@@ -1,6 +1,6 @@
 {
   "name": "myjekyll",
-  "description": "myjekyll",
+  "description": "MyJekyll is a Jekyll-like Markdown parser for bouzuya",
   "version": "1.0.0",
   "author": {
     "name": "bouzuya",
