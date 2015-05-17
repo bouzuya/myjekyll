@@ -14,5 +14,5 @@
     "test": "mocha"
   },
   "author": "bouzuya",
-  "license": "ISC"
+  "license": "MIT"
 }
