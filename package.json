@@ -2,7 +2,11 @@
   "name": "myjekyll",
   "description": "myjekyll",
   "version": "1.0.0",
-  "author": "bouzuya",
+  "author": {
+    "name": "bouzuya",
+    "email": "m@bouzuya.net",
+    "url": "http://bouzuya.net"
+  },
   "dependencies": {
     "js-yaml": "~3.0.2"
   },
