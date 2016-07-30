@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "glob": "^5.0.6",
-    "js-yaml": "^3.3.1"
+    "jekyll-markdown-parser": "0.1.0"
   },
   "devDependencies": {
     "chai": "^2.3.0",
