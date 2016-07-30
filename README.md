@@ -40,6 +40,13 @@ tags: [tag1, tag2]
 Hello, [bouzuya](http://github.com/bouzuya/).
 ```
 
+## Badge
+
+[![Travis CI][travisci-badge-url]][travisci-url]
+
+[travisci-badge-url]: https://travis-ci.org/bouzuya/myjekyll.svg?branch=master
+[travisci-url]: https://travis-ci.org/bouzuya/myjekyll
+
 # License
 
 ## 2.x
