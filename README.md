@@ -1,6 +1,6 @@
 # myjekyll
 
-MyJekyll is a [Jekyll](http://jekyllrb.com/)-like Markdown parser for [bouzuya](https://github.com/bouzuya/)
+A [Jekyll](http://jekyllrb.com/)-like Markdown parser for [bouzuya](https://github.com/bouzuya/)
 
 ## Installation
 
