@@ -47,12 +47,12 @@ Hello, [bouzuya](http://github.com/bouzuya/).
 [travisci-badge-url]: https://travis-ci.org/bouzuya/myjekyll.svg?branch=master
 [travisci-url]: https://travis-ci.org/bouzuya/myjekyll
 
-# License
+## License
 
-## 2.x
+### 2.x
 
 [MIT](LICENSE)
 
-## <1.0.0
+### <1.0.0
 
 ISC
