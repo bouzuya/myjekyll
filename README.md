@@ -4,11 +4,7 @@ A [Jekyll](http://jekyllrb.com/)-like Markdown parser for [bouzuya](https://gith
 
 ## Installation
 
-    $ npm install https://github.com/bouzuya/myjekyll/archive/master.tar.gz
-
-or
-
-    $ npm install https://github.com/bouzuya/myjekyll/archive/{VERSION}.tar.gz
+    $ npm install @bouzuya/myjekyll
 
 ## Usage
 

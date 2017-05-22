@@ -1,5 +1,5 @@
 {
-  "name": "myjekyll",
+  "name": "@bouzuya/myjekyll",
   "description": "A Jekyll-like Markdown parser for bouzuya",
   "version": "2.0.1",
   "author": {
@@ -17,7 +17,6 @@
   },
   "license": "MIT",
   "main": "index.js",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/bouzuya/myjekyll.git"
